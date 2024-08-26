@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+const contactRoutes = require("./routes/contact");
+app.use("/api/contacts", contactRoutes);
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
