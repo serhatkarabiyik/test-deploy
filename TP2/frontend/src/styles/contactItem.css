@@ -1,0 +1,34 @@
+.contactItem {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactItem:last-child {
+    border-bottom: none;
+}
+
+.contactItemInfo {
+    font-size: 16px;
+}
+
+.contactItemActions {
+    display: flex;
+    gap: 10px;
+}
+
+.contactItemButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactItemButton:hover {
+    background-color: #c82333;
+}

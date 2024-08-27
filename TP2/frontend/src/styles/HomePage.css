@@ -1,0 +1,26 @@
+.homePage {
+    padding: 20px;
+}
+
+.homePageTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.homePageButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.homePageButton:hover {
+    background-color: #0056b3;
+}

@@ -81,7 +81,7 @@ const deleteContactById = async (req, res) => {
   }
 };
 
-export {
+module.exports = {
   createContact,
   getAllContacts,
   getContactById,
