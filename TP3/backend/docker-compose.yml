@@ -1,0 +1,27 @@
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    build: .
+    container_name: reaction-time-app
+    env_file:
+      - .env.docker
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+
+volumes:
+  mongo-data:
+
+networks:
+  app-network:
+    driver: bridge
